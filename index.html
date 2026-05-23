@@ -1,3 +1,272 @@
-<script>
-   window.location.replace("https://reemisaodas.com/?id=1");
-</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLACK BARBER STORE</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+    }
+
+    header{
+      background:#000;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #222;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#d4af37;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#d4af37;
+    }
+
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1974&auto=format&fit=crop') center/cover;
+      display:flex;
+      align-items:center;
+      padding:0 8%;
+      position:relative;
+    }
+
+    .overlay{
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.6);
+    }
+
+    .hero-content{
+      position:relative;
+      max-width:600px;
+      z-index:2;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero p{
+      color:#ccc;
+      margin-bottom:30px;
+      font-size:18px;
+    }
+
+    .btn{
+      background:#d4af37;
+      color:black;
+      padding:15px 35px;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:5px;
+      display:inline-block;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    .section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      font-size:40px;
+      margin-bottom:40px;
+      color:#d4af37;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#181818;
+      border-radius:10px;
+      overflow:hidden;
+      transition:.3s;
+      border:1px solid #222;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border-color:#d4af37;
+    }
+
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#d4af37;
+      font-size:22px;
+      margin-bottom:15px;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:40px;
+      margin-top:50px;
+      border-top:1px solid #222;
+      color:#777;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BLACK STORE</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Barbearia</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>ELEVE SUA BARBEARIA PRA OUTRO NÍVEL</h1>
+
+      <p>
+        Equipamentos premium, cosméticos profissionais e acessórios
+        pra barbeiro que não aceita serviço meia boca.
+      </p>
+
+      <a href="#" class="btn">
+        COMPRAR AGORA
+      </a>
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <h2 class="section-title">
+      MAIS VENDIDOS
+    </h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Máquina Profissional Gold</h3>
+          <div class="price">R$ 799,90</div>
+
+          <a href="#" class="btn">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Kit Barber Premium</h3>
+          <div class="price">R$ 349,90</div>
+
+          <a href="#" class="btn">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Pomada Modeladora</h3>
+          <div class="price">R$ 59,90</div>
+
+          <a href="#" class="btn">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <h2 class="section-title">
+      POR QUE ESCOLHER A BLACK STORE?
+    </h2>
+
+    <p style="color:#aaa; line-height:1.8; max-width:800px;">
+      Produtos profissionais pra barbeiros que querem parar de parecer amador.
+      Aqui é equipamento bruto, acabamento premium e visual de respeito.
+      Se tua bancada parece camelô, teu cliente percebe.
+    </p>
+
+  </section>
+
+  <footer>
+
+    © 2026 BLACK STORE — TODOS OS DIREITOS RESERVADOS
+
+  </footer>
+
+</body>
+</html>
